@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a0dad, #00bfff, #ff69b4);
+    background-size: 400% 400%; /* Animasyon için geniş bir geçiş alanı */
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e6e6fa; /* Açık lavanta */
+  }
+  
+  .date {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #dcdcff; /* Hafif mavi ton */
+  }
+  
+  .key-box {
+    margin: 20px 0;
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .key {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* Beyaz */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .info {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #f0e68c; /* Açık sarı */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #6a0dad, #00bfff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #ff69b4, #6a0dad);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
